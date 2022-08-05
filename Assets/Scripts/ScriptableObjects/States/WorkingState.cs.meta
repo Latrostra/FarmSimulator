@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 73530880c58f7d04abdf6f59c0c5bec9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - playerGO: {fileID: 11400000, guid: c5fbe0f24cd829f4d94e5ecaf7ed42ff, type: 2}
+  - activeTool: {fileID: 11400000, guid: 1784872f57a08dd4fad55f78beca62d2, type: 2}
+  - changeStateByType: {fileID: 11400000, guid: 4a64e18872c3a5642813deabd9aae4ed, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

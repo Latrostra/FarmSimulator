@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Trailers
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Bloking
+  - Useable
+  - Vehicle
+  - Interactable
+  - Object
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Trailer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 1661736885
+    locked: 0
+  - name: Vehicle
+    uniqueID: 1878267727
+    locked: 0
+  - name: Object
+    uniqueID: 417025
+    locked: 0
+  - name: UI
+    uniqueID: 412833131
+    locked: 0

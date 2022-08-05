@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5f28d9687343b469b4e84b1d6f3df0, type: 3}
+  m_Name: Stubble
+  m_EditorClassIdentifier: 
+  <RuleTile>k__BackingField: {fileID: 11400000, guid: 87c79085006fc464989f93d822d557ad, type: 2}
+  <PreviousTile>k__BackingField: {fileID: 11400000, guid: 691770144203d8a4bb4610dfad11a76c, type: 2}
+  sprite: {fileID: 0}
+  prefab: {fileID: 3845248598142216053, guid: 3ad57d49a94a8cf468bee964947f0fbd, type: 3}
+  creationTime: 5

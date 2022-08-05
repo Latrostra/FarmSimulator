@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5f28d9687343b469b4e84b1d6f3df0, type: 3}
+  m_Name: WheatTile
+  m_EditorClassIdentifier: 
+  <RuleTile>k__BackingField: {fileID: 11400000, guid: 19e1fe41772f57444a2c024edf804328, type: 2}
+  <PreviousTile>k__BackingField: {fileID: 11400000, guid: f9e8b96e9e09e9f4c8926fb4a11ac1f4, type: 2}
+  sprite: {fileID: 0}
+  prefab: {fileID: 1611458036873167753, guid: cc2ae32e3414d94448cd82b82d1d1400, type: 3}
+  creationTime: 2
