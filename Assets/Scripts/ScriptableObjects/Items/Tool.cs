@@ -4,6 +4,7 @@ using UnityEngine;
 namespace ScriptableObjects.Items
 {
     [CreateAssetMenu(fileName = "New Tool", menuName = "Item/Tool", order = 55)]
+    [SerializeField]
     public class Tool : Item
     {
         [field: SerializeField] public string Name { get; private set; }

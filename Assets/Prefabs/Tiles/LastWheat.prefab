@@ -43,11 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c8f8f2eb4e02744bfbd6d912c619d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextStageTime:
-    Seconds: 0
-    Minutes: 0
-    Hours: 0
-    Day: 0
-    Months: 8
-    Years: 2022
+  nextStageTime: {fileID: 11400000, guid: e505353c5eb7933409c879d3d3c7489e, type: 2}
   nextTile: {fileID: 11400000, guid: c859d1d47ce65514babf55c8d94e4745, type: 2}

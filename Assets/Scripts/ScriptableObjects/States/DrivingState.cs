@@ -101,7 +101,7 @@ namespace ScriptableObjects.States
             
         }
 
-        private void Work() {
+        private void AttachToHook() {
             if (!Action.GetPlayerActions().Work.triggered)
                 return;
 

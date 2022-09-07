@@ -71,6 +71,15 @@ public partial class @Actions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Console"",
+                    ""type"": ""Button"",
+                    ""id"": ""dd73ad1b-8f26-4663-92f4-199fa43a1bbe"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -313,6 +322,17 @@ public partial class @Actions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Work"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4830569c-03de-4092-8b41-9ea577f627de"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Console"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -905,6 +925,7 @@ public partial class @Actions : IInputActionCollection2, IDisposable
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
         m_Player_EnterExit = m_Player.FindAction("EnterExit", throwIfNotFound: true);
         m_Player_Work = m_Player.FindAction("Work", throwIfNotFound: true);
+        m_Player_Console = m_Player.FindAction("Console", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -981,6 +1002,7 @@ public partial class @Actions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Fire;
     private readonly InputAction m_Player_EnterExit;
     private readonly InputAction m_Player_Work;
+    private readonly InputAction m_Player_Console;
     public struct PlayerActions
     {
         private @Actions m_Wrapper;
@@ -990,6 +1012,7 @@ public partial class @Actions : IInputActionCollection2, IDisposable
         public InputAction @Fire => m_Wrapper.m_Player_Fire;
         public InputAction @EnterExit => m_Wrapper.m_Player_EnterExit;
         public InputAction @Work => m_Wrapper.m_Player_Work;
+        public InputAction @Console => m_Wrapper.m_Player_Console;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1014,6 +1037,9 @@ public partial class @Actions : IInputActionCollection2, IDisposable
                 @Work.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWork;
                 @Work.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWork;
                 @Work.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWork;
+                @Console.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnConsole;
+                @Console.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnConsole;
+                @Console.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnConsole;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -1033,6 +1059,9 @@ public partial class @Actions : IInputActionCollection2, IDisposable
                 @Work.started += instance.OnWork;
                 @Work.performed += instance.OnWork;
                 @Work.canceled += instance.OnWork;
+                @Console.started += instance.OnConsole;
+                @Console.performed += instance.OnConsole;
+                @Console.canceled += instance.OnConsole;
             }
         }
     }
@@ -1194,6 +1223,7 @@ public partial class @Actions : IInputActionCollection2, IDisposable
         void OnFire(InputAction.CallbackContext context);
         void OnEnterExit(InputAction.CallbackContext context);
         void OnWork(InputAction.CallbackContext context);
+        void OnConsole(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

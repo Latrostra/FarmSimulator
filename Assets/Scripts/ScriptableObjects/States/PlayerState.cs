@@ -15,7 +15,6 @@ namespace ScriptableObjects.States
 
         private void Initialization()
         {
-            Debug.Log(playerGO.Value.name);
             rigidbody2D = playerGO.Value.GetComponent<Rigidbody2D>();
             transform = playerGO.Value.transform;
             animator = playerGO.Value.GetComponent<Animator>();

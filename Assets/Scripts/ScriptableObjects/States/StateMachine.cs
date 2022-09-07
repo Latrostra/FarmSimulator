@@ -76,22 +76,9 @@ namespace ScriptableObjects.States
         {
             Debug.Log($"Change state: ({currentState.Value.GetType()}) => ({newState.GetType()})");
             
-            // Debug.Log(newState.GetType().BaseType.Name);
-            // if (IsSameFamily(newState))
-            // {
-            //     Debug.Log("1");
-            //     currentState.Value = newState;
-            // }
-            // else
-            // {
-            //     Debug.Log("2");
-
-                currentState.Value._Finish();
-                currentState.Value = newState;
-                currentState.Value._Init();
-            // }
-
-            
+            currentState.Value._Finish();
+            currentState.Value = newState;
+            currentState.Value._Init();
         }
 
         private bool IsSameFamily(State newState) => currentState.Value.GetType().BaseType?.Name == newState.GetType().BaseType?.Name;

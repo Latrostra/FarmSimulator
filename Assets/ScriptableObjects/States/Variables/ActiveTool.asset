@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70bb0f9aadd0588488a11b96ace0ecba, type: 3}
   m_Name: ActiveTool
   m_EditorClassIdentifier: 
-  _value: {fileID: 11400000, guid: 06187f9613687444fb4e40609a7db14e, type: 2}
+  _value: {fileID: 11400000, guid: bb6a6afc0f2d1f34cba45d8c3e920404, type: 2}
   _readOnly: 0
   _raiseWarning: 1
   _isClamped: 0

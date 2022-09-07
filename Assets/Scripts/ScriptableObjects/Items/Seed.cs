@@ -14,7 +14,7 @@ namespace ScriptableObjects.Items
 
         public override bool CanUse(Vector2 position)
         {
-            if ((TimeLapse.Instance.dateTime.Day >= dayFrom && TimeLapse.Instance.dateTime.Day <= dayTo) && (TimeLapse.Instance.dateTime.Months >= monthFrom && TimeLapse.Instance.dateTime.Months <= monthTo)) {
+            if ((TimeLapse.Instance.dateTime.Value.Day >= dayFrom && TimeLapse.Instance.dateTime.Value.Day <= dayTo) && (TimeLapse.Instance.dateTime.Value.Months >= monthFrom && TimeLapse.Instance.dateTime.Value.Months <= monthTo)) {
                 return Tile.CanCreate(position);
             }
             return false;

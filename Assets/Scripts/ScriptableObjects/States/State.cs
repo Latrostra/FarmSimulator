@@ -12,6 +12,4 @@ namespace ScriptableObjects.States
 
         public abstract void _Finish();
     }
-
-
 }

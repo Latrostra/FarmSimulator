@@ -16,10 +16,12 @@ namespace ScriptableObjects.Tiles
         public void Create(Vector2 position)
         {
             var tilemap = GridManager.Instance.GetTilemap();
-            tilemap.SetTile(GridManager.Instance.GetWorldPosition(position), RuleTile);
             
             if (prefab != null) {
                 var obj = Instantiate(prefab, GridManager.Instance.GetWorldPosition(position), Quaternion.identity, tilemap.transform);
+            }
+            if (RuleTile != null) {
+                tilemap.SetTile(GridManager.Instance.GetWorldPosition(position), RuleTile);
             }
         }
 

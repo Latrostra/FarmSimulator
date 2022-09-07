@@ -3,38 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[Serializable]
-public class DateTime
+[CreateAssetMenu(menuName = "Time/TimeSO")]
+public class DateTime : ScriptableObject
 {
-    [HideInInspector]
     public float Seconds;
-    [HideInInspector]
     public int Minutes;
-    [HideInInspector]
     public int Hours;
     public int Day;
     public int Months;
     public int Years;
 
-    public DateTime(int years, int months, int day, int hours, int minutes, int seconds)
-    {
-        Seconds = seconds;
-        Minutes = minutes;
-        Hours = hours;
+    public void SetDMR(int day, int month, int year) {
         Day = day;
-        Months = months;
-        Years = years;
-    }
-
-    public DateTime(int day, int months, int years) {
-        Day = day;
-        Months = months;
-        Years = years;
+        Months = month;
+        Years = year;
     }
 
     public bool CompareDates(DateTime dateTime) {
         if (dateTime.Years >= Years) {
             if (dateTime.Months >= Months) {
+                
+                return true;
+            }
+        }
+        return false;
+    }
+    public bool CompareDates(int year, int month) {
+        if (year >= Years) {
+            if (month >= Months) {
                 
                 return true;
             }
