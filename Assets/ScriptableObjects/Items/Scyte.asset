@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92c79ab0d86db3489a48a9150fe561a, type: 3}
+  m_Name: Scyte
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Scyte
+  <Level>k__BackingField: 1
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 412cb2ae5f4168b4d9b023071e7b59c1, type: 3}
+  <Range>k__BackingField: 20
+  <Durability>k__BackingField: 123434
+  <AnimationType>k__BackingField: {fileID: 11400000, guid: 3c14d8556ab51cc47b0b05dd6d04e173, type: 2}
+  <Tile>k__BackingField: {fileID: 11400000, guid: 03347f2042b296c4cb0748b13d7c4b3f, type: 2}
